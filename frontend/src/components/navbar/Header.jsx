@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import { Layout, Nav, Styles } from "../../style/Style";
-import { useNavigate } from "react-router-dom";
+import { Nav, Styles } from "../../style/Style";
+// import { useNavigate } from "react-router-dom";
 import NavLink from "./layout/NavLink";
 import LinkMob from "./layout/LinkMob";
+import BtnNav from "./layout/BtnNav";
+import ProfNav from "./layout/ProfNav";
 
 const Header = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <nav className={Nav.nav}>
@@ -17,9 +19,8 @@ const Header = () => {
         </span>
         <NavLink />
         <div className={`${Styles.flexCenter} gap-1`}>
-          <button type="button" className={`${Layout.BtnActi} py-2`} onClick={() => navigate("/login")}>
-            Login
-          </button>
+          {/* <BtnNav /> */}
+          <ProfNav />
           <LinkMob />
         </div>
       </div>

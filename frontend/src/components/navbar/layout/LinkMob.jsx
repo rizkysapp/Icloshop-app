@@ -14,7 +14,7 @@ const LinkMob = () => {
 
   return (
     <div>
-      <Link>
+      <div>
         <Popover className="relative sm:hidden">
           <Popover.Button className={Nav.PopoverBtnMob}>
             <HiBars4 />
@@ -42,7 +42,7 @@ const LinkMob = () => {
             </Popover.Panel>
           </Transition>
         </Popover>
-      </Link>
+      </div>
     </div>
   );
 };
